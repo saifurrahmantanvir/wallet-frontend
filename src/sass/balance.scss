@@ -1,0 +1,96 @@
+.balance {
+   display: grid;
+   grid-template-columns: repeat(2, min-content);
+   grid-gap: 2rem;
+
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: var(--shadow-out);
+
+   &--1 {
+      @media only screen and (max-width: 83em) {
+         grid-column: 2 / 3;
+      }
+
+      @media only screen and (max-width: 43em) {
+         grid-column: 1 / span 2;
+         grid-row: 2 / 3;
+         justify-self: start;
+      }
+
+      @media only screen and (max-width: 28em) {
+         grid-row: 2 / 3;
+      }
+   }
+
+   &--2 {
+      @media only screen and (max-width: 58em) {
+         grid-column: 2 / 3;
+      }
+
+      @media only screen and (max-width: 43em) {
+         grid-column: 4 / span 2;
+         grid-row: 2 / 3;
+         justify-self: end;
+      }
+
+      @media only screen and (max-width: 28em) {
+         grid-row: 3 / 4;
+      }
+   }
+
+   &--3 {
+      @media only screen and (max-width: 58em) {
+         grid-column: 2 / 3;
+      }
+
+      @media only screen and (max-width: 43em) {
+         grid-column: 2 / span 3;
+         justify-self: center;
+      }
+
+      @media only screen and (max-width: 28em) {
+         grid-row: 4 / 5;
+      }
+   }
+
+   @media only screen and (max-width: 58em) {
+      padding: 2rem 4rem;
+   }
+
+   @media only screen and (max-width: 43em) {
+      justify-self: center;
+      margin: 1rem;
+   }
+
+   @media only screen and (max-width: 37.5em) {
+      padding: 2rem;
+   }
+
+   @media only screen and (max-width: 28em) {
+      grid-column: 1 / -1;
+      justify-self: center;
+      padding: 3rem 5rem;
+      margin: 0;
+   }
+
+   &__label {
+      align-self: center;
+   }
+
+   &__amount {
+      grid-column: 2 / -1;
+      font-family: var(--font-number);
+      font-weight: 400;
+      font-size: 3.5rem;
+      display: flex;
+      align-items: center;
+      line-height: 0.5;
+      letter-spacing: -2px;
+   }
+
+   &__icon {
+      height: 4.5rem;
+      width: 4.5rem;
+   }
+}

@@ -1,0 +1,77 @@
+.transfer {
+   display: grid;
+   grid-template-columns: max-content;
+   grid-gap: 3rem;
+   justify-content: center;
+
+   @media only screen and (max-width: 43em) {
+      padding: 3rem;
+
+      @media only screen and (max-width: 31.25em) {
+         font-size: 1.6rem;
+      }
+   }
+
+   @media only screen and (max-width: 37.5em) {
+      grid-template-columns: min-content;
+   }
+
+   &__label {
+      text-align: center;
+   }
+
+   &__svg {
+      justify-self: center;
+      height: 35rem;
+      width: 40rem;
+
+      @media only screen and (max-width: 31.25em) {
+         height: 30rem;
+         width: 35rem;
+      }
+
+      @media only screen and (max-width: 28em) {
+         height: 25rem;
+         width: 30rem;
+      }
+
+      @media only screen and (max-width: 23.75em) {
+         height: 25rem;
+         width: 30rem;
+      }
+   }
+
+   &__form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      justify-content: center;
+
+      @media only screen and (max-width: 43em) {
+         width: 85%;
+         margin: auto;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+         grid-template-columns: 1fr;
+         width: 80%;
+      }
+
+      & input {
+         width: 100%;
+
+         // @media only screen and (max-width: 37.5em) {
+         //    width: 85%;
+         // }
+      }
+
+      & button {
+         grid-column: 2 / 3;
+         justify-self: end;
+
+         @media only screen and (max-width: 37.5em) {
+            grid-column: auto;
+         }
+      }
+   }
+}

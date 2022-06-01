@@ -1,0 +1,9 @@
+export const SET_STATUS = 'SET_STATUS'
+
+/* USER ACTIONS */
+export const GET_USER = 'GET_USER';
+export const REMOVE_USER = 'REMOVE_USER';
+
+/* MOVEMENTS ACTIONS */
+export const GET_MOVEMENTS = 'GET_MOVEMENTS';
+export const REMOVE_MOVEMENTS = 'REMOVE_MOVEMENTS';

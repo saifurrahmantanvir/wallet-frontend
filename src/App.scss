@@ -1,0 +1,19 @@
+.app {
+   display: grid;
+   grid-template-columns: minmax(min-content, 25rem) minmax(min-content, 100rem);
+   justify-content: center;
+   min-height: 75rem;
+   grid-gap: 3rem;
+   padding: 3rem;
+
+   position: relative;
+
+   @media only screen and (max-width: 72.5em) {
+      grid-template-columns: 1fr minmax(min-content, 100rem);
+   }
+
+   @media only screen and (max-width: 58em) {
+      padding: 0;
+      grid-gap: 0;
+   }
+}

@@ -1,0 +1,87 @@
+.home {
+   display: grid;
+   grid-template-columns: repeat(5, minmax(max-content, 1fr));
+   grid-gap: 3rem;
+
+   @media only screen and (max-width: 58em) {
+      justify-content: center;
+   }
+
+   &__graph {
+      grid-column: 1 / span 3;
+
+      @media only screen and (max-width: 83em) {
+         grid-column: 2 / span 3;
+      }
+   }
+}
+
+.recent {
+   grid-column: 4 / -1;
+   grid-row: 2 / span 2;
+   padding: 3rem 3rem 2rem;
+   box-shadow: var(--shadow-out);
+
+   @media only screen and (max-width: 83em) {
+      display: none;
+   }
+
+   @media only screen and (max-width: 58em) {
+      display: inline-block;
+      grid-column: 3 / 5;
+      grid-row: 2 / span 3;
+      justify-self: end;
+      padding: 3rem 5rem;
+      border-radius: 1rem;
+   }
+
+   @media only screen and (max-width: 43em) {
+      display: none;
+   }
+
+   &>* {
+      margin-bottom: 3rem;
+   }
+
+   &__transection {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 1rem 1.8rem;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-in);
+      line-height: 1.3;
+
+      @media only screen and (max-width: 58em) {
+         gap: 5rem;
+      }
+
+      & span {
+         font-size: 2.2rem;
+      }
+
+      & span,
+      & p {
+         font-family: var(--font-number);
+         font-weight: 600;
+         line-height: 1.2;
+         letter-spacing: -1px;
+      }
+
+      & .doller {
+         font-family: var(--font-doller);
+      }
+
+      & .doller-3 {
+         font-size: 2.5rem;
+         font-weight: 600;
+      }
+   }
+}
+
+.transection-icon {
+   height: 5rem;
+   width: 5rem;
+   border-radius: 1rem;
+   box-shadow: var(--shadow-out);
+}

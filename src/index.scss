@@ -1,0 +1,103 @@
+:root {
+  --font-text: 'Spartan', sans-serif;
+  --font-number: 'Mukta', sans-serif;
+  --font-doller: 'Molengo', sans-serif;
+
+  --color-background: #ECF0F3;
+  --color-text: #292D32;
+
+  --shadow-out: -3px -3px 7px #ffffff73,
+    3px 3px 5px rgba(94, 104, 121, 0.288);
+  --shadow-in: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 63.5em) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 53.125%;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  /* background-color: #dde1e7; */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button,
+input {
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  background: none;
+  border-radius: 0.5rem;
+  letter-spacing: -1px;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+button {
+  font-size: 2.2rem;
+  padding: 1.3rem 2.4rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-out);
+}
+
+input {
+  font-size: 2rem;
+  padding: 1.7rem 2.5rem;
+  box-shadow: var(--shadow-in);
+}
+
+sub {
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+}
+
+.doller {
+  font-family: var(--font-doller);
+}
+
+.doller-1 {
+  font-size: 8rem;
+}
+
+.doller-2 {
+  font-size: 4rem;
+  transform: translateY(-3px);
+}

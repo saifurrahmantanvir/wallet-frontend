@@ -1,0 +1,6 @@
+export { default as Home } from './Home'
+export { default as Statistics } from './Statistics'
+export { default as Loan } from './Loan'
+export { default as Transfer } from './Transfer'
+export { default as Settings } from './Settings'
+export { default as NoMatch } from './NoMatch'

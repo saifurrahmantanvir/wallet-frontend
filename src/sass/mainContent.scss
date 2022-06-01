@@ -1,0 +1,25 @@
+.main {
+   padding: 3rem;
+   box-shadow: var(--shadow-out);
+
+   @media only screen and (max-width: 72.5em) {
+      grid-column: 1 / -1;
+   }
+
+   @media only screen and (max-width: 58em) {
+      box-shadow: none;
+      padding: 5rem;
+   }
+
+   @media only screen and (max-width: 50em) {
+      padding: 3rem;
+   }
+
+   @media only screen and (max-width: 43em) {
+      padding: 1rem;
+   }
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+}

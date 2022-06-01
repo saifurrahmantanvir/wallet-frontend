@@ -1,0 +1,58 @@
+#modal {
+   position: relative;
+}
+
+.modal {
+   &__container {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      padding-right: 1rem;
+
+      background-color: var(--color-background);
+
+      /* box-shadow: var(--shadow-out);
+      animation: popIn 1s ease; */
+
+      @media only screen and (max-width: 72.5em) {
+         transform: translateX(-50%);
+         width: 88%;
+      }
+
+      &>h3 {
+         font-size: 1.6rem;
+      }
+   }
+
+   &__transfer {
+      left: 44%;
+
+      @media only screen and (max-width: 72.5em) {
+         left: 50%;
+      }
+   }
+
+   &__close {
+      line-height: 1;
+      margin: 0 1rem;
+      font-size: 3rem;
+      padding: 0.8rem 1rem 0 1rem;
+   }
+}
+
+/*
+@keyframes popIn {
+   0% {
+      transform: translateY(100px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+*/

@@ -1,0 +1,55 @@
+.loan {
+   display: grid;
+   grid-template-columns: max-content;
+   grid-gap: 3rem;
+   justify-content: center;
+
+   @media only screen and (max-width: 43em) {
+      padding: 3rem;
+   }
+
+   &__label {
+      text-align: center;
+
+      @media only screen and (max-width: 31.25em) {
+         font-size: 3rem;
+      }
+   }
+
+   &__svg {
+      justify-self: center;
+      height: 35rem;
+      width: 40rem;
+
+      @media only screen and (max-width: 31.25em) {
+         height: 30rem;
+         width: 35rem;
+      }
+
+      @media only screen and (max-width: 28em) {
+         height: 25rem;
+         width: 30rem;
+      }
+
+      @media only screen and (max-width: 23.75em) {
+         height: 25rem;
+         width: 28rem;
+      }
+   }
+
+   &__form {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      align-items: flex-end;
+
+      @media only screen and (max-width: 31.25em) {
+         flex-direction: column;
+         gap: 2rem;
+      }
+
+      & input {
+         width: 95%;
+      }
+   }
+}
