@@ -16,8 +16,10 @@ const Loan = () => {
 
    const movementsData = useMovements()
    const movements = movementsData.map(moves => moves.movement)
+   const requestable = Math.max(...movements) * 0.8;
 
    const [loanStatus, setLoanStatus] = useState<StatusType>('closed');
+
 
    const handleLoanRequest = async (e: React.BaseSyntheticEvent) => {
       e.preventDefault();
@@ -45,6 +47,8 @@ const Loan = () => {
             dispatch(getMovements(user.account as number))
 
             setLoanStatus('success');
+         } else {
+            setLoanStatus('failed')
          }
 
       } catch (error) {
@@ -58,6 +62,11 @@ const Loan = () => {
       <div className="loan">
          <h1 className="loan__label">Take loan easily, anytime</h1>
          <LoanSvg />
+
+         <p className='loan__requestable'>
+            NOTE - you can request for upto {requestable}
+            <span className='doller'>$</span>
+         </p>
 
          <form className="loan__form" onSubmit={handleLoanRequest}>
             <input type='number' id='loan' className="loan__input" placeholder="Enter amount" />

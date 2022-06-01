@@ -1,6 +1,6 @@
-# Getting started with wallet app
+# Getting started with `wallet.` app
 
-Hi, everyone. This is my first full-stack app. I used `React JS` for frontend and `Node JS` for backend.
+Hi, everyone. This is my first full-stack app. I used `React JS` for frontend and `Node JS` for backend.\
 You can start by creating an account(API features signup) and all the movements you make.
 You can request for loan and transfer money to your homies.
 
@@ -28,9 +28,9 @@ You can request for loan and transfer money to your homies.
 6. JWT Authentication
 7. Pug
 
-**Checkout the API documentation [here](https://wallet-tanvir.herokuapp.com)**
+**Checkout the API documentation at [https://wallet-tanvir.herokuapp.com](https://wallet-tanvir.herokuapp.com)**
 
 Give it a shot
 
-Tanvir Rahman
-Frontend Developer
+**Tanvir Rahman**\
+**Frontend Developer**

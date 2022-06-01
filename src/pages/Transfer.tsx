@@ -55,6 +55,8 @@ const Transfer = () => {
             dispatch(getMovements(sender as number))
 
             setTransferStatus('success');
+         } else {
+            setTransferStatus('failed')
          }
 
       } catch (error) {

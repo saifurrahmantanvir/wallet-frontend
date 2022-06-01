@@ -16,6 +16,18 @@
       }
    }
 
+   &__requestable {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      color: #9a9a9a;
+      letter-spacing: -1px;
+
+      &>span {
+         font-size: 3rem;
+      }
+   }
+
    &__svg {
       justify-self: center;
       height: 35rem;
