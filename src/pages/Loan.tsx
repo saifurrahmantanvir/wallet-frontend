@@ -32,7 +32,7 @@ const Loan = () => {
          const movement = +e.target.elements.loan.value;
 
          if (movement > 0 && movements.some(mov => mov * 0.8 >= movement)) {
-            const response = await fetch(`https://wallet-tanvir.herokuapp.com/api/movements/${user.account}`, {
+            const response = await fetch(`https://wallet-tanvir.onrender.com/api/movements/${user.account}`, {
                method: 'POST',
                headers: {
                   'Content-Type': 'application/json',

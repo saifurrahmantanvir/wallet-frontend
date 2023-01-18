@@ -28,7 +28,7 @@ You can request for loan and transfer money to your homies.
 6. JWT Authentication
 7. Pug
 
-**Checkout the API documentation at [https://wallet-tanvir.herokuapp.com](https://wallet-tanvir.herokuapp.com)**
+**Checkout the API documentation at [https://wallet-tanvir.onrender.com](https://wallet-tanvir.onrender.com)**
 
 Give it a shot
 

@@ -19,7 +19,7 @@ const Transfer = () => {
    const [transferStatus, setTransferStatus] = useState<StatusType>('closed');
 
    const movementReq = (account: number, token: string, amount: number) => {
-      return fetch(`https://wallet-tanvir.herokuapp.com/ap/movements/${account}`, {
+      return fetch(`https://wallet-tanvir.onrender.com/api/movements/${account}`, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json',

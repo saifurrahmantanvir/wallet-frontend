@@ -7,7 +7,7 @@ export const setMovements = (movements: Movement[]) => {
 
 export const getMovements = (account: number) => async (dispatch: any) => {
    try {
-      const response = await fetch(`https://wallet-tanvir.herokuapp.com/api/movements/${account}`)
+      const response = await fetch(`https://wallet-tanvir.onrender.com/api/movements/${account}`)
 
       const { status, ...data } = await response.json()
       if (status === 'fail') throw data

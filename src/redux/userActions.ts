@@ -11,7 +11,7 @@ export const setStatus = (message: string) => {
 
 export const getUser = (name: string, pin: string) => async (dispatch: any) => {
    try {
-      const response = await fetch('https://wallet-tanvir.herokuapp.com/api/users/login', {
+      const response = await fetch('https://wallet-tanvir.onrender.com/api/users/login', {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json'

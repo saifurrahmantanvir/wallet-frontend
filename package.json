@@ -2,7 +2,7 @@
   "name": "wallet",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://wallet-tanvir.herokuapp.com",
+  "proxy": "https://wallet-tanvir.onrender.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
